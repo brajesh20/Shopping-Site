@@ -1,0 +1,57 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* NAVBAR */
+
+.navbar img{
+  width: 180px;
+  height: 80px;
+}
+
+.navSection{
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cartSection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* SPINNER */
+
+.bars {
+  width: 50.4px;
+  height: 67.2px;
+  --c: linear-gradient(#474bff  0 0);
+  background: var(--c) 0%   50%,
+       var(--c) 50%  50%,
+       var(--c) 100% 50%;
+  background-size: 10.1px 50%;
+  background-repeat: no-repeat;
+  animation: bars-wk19tf 1s infinite linear;
+}
+
+@keyframes bars-wk19tf {
+  20% {
+     background-position: 0% 0%  ,50% 50% ,100% 50%;
+  }
+
+  40% {
+     background-position: 0% 100%,50% 0%  ,100% 50%;
+  }
+
+  60% {
+     background-position: 0% 50% ,50% 100%,100% 0%;
+  }
+
+  80% {
+     background-position: 0% 50% ,50% 50% ,100% 100%;
+  }
+}     
